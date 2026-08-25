@@ -1,0 +1,195 @@
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #9040a1;
+    color:white;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+@keyframes colorChange {
+    0% {
+        color: #ff416c;
+    }
+    25% {
+        color: #ff4b2b;
+    }
+    50% {
+        color: #0099cc;
+    }
+    75% {
+        color: #ffcc00;
+    }
+    100% {
+        color: #44bd32;
+    }
+}
+
+nav{
+  margin-top: -32px;
+}
+section{
+  width: 100%;
+  height: 800px;
+}
+
+
+
+
+
+.img-container{
+    width: 400px;
+    height: 600px; 
+    position: relative;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+.top{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+.top:hover {
+    opacity: 1;
+}
+
+.img-container1{
+    width: 400px;
+    height: 600px; 
+    position: relative;
+    margin-left: 750px;
+}
+.img-container1 img{
+    width: 100%;
+    height: 100%;
+}
+.top1{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+.top1:hover {
+    opacity: 1;
+}
+
+a::selection {
+  background: indianred;
+  color: white;
+}
+
+a::-moz-selection {
+  background: indianred;
+  color: white;
+}
+h1::selection {
+  background: indianred;
+  color: white;
+}
+
+h1::-moz-selection {
+  background: indianred;
+  color: white;
+}
+img::selection {
+  background: indianred;
+  color: white;
+}
+
+img::-moz-selection {
+  background: indianred;
+  color: white;
+}
+
+
+.GFG {
+            width: 400px;
+            height: 600px;
+            border-radius: 10%;
+            
+        }
+        .GFG:hover {
+            color: #111;
+            background: purple;
+            box-shadow: 0 0 100px purple;
+        }
+
+
+
+        heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+}
+
+.heading h2 span {
+    color: #ff9100;
+}
+
+.heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+.form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 0;
+    border-radius: 10px;
+}
+
+button.btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #ff9100;
+    color: #ffffff;
+}
+
+.title h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.6;
+    margin: 0 0 40px;
+}
+
+.content .info {
+    margin-top: 30px;
+}
+.content .info i {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #02434b;
+    margin-right: 20px;
+    text-align: center;
+    width: 20px;
+}
+.content .info h4 {
+    font-size: 13px;
+    line-height: 1.4;
+}
+.content .info h4 span {
+    font-size: 13px;
+    font-weight: 300;
+    color: #999999;
+}
