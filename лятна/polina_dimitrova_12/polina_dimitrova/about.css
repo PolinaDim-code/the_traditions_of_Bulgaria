@@ -1,0 +1,242 @@
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #292E6C;
+}
+nav{
+    width: 100%;
+    height: 46px;
+    background-color: ;
+}
+section{
+    width: 100%;
+    height: 600px;
+    background-color: #18A5AC;
+    background-image: url("");
+    background-size: cover;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #5CC09D;
+    margin-top: -30px;
+}
+*{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: monospace;
+        }
+        nav{
+            background-color: rgb(73, 4, 138);
+            height: 80px;
+            width: 100%;
+        }
+        label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+            animation: colorChange 4s linear infinite;
+        }
+        nav ul{
+            float: right;
+            margin-right: 100px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 22px;
+            text-transform: uppercase;
+            padding: 5px 10px;
+        }
+        nav ul li a.active,
+        nav ul li a:hover{
+            background: #4664AF;
+            transition: .5s;
+            border-radius: 5px;
+        }
+        .checkbtn{   
+            float: right;
+            color: white;
+            margin-right: 40px;
+            display: none;
+            cursor: pointer;
+        }
+        .checkbtn i{
+            line-height: 80px;
+            font-size: 25px;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width: 950px){
+            label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li a{
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 858px){
+            .checkbtn{
+                display: block;
+            }
+            nav ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                transition: all .5s;
+                text-align: center;
+            }
+            nav ul li{
+                display: block;
+                margin: 70x 0;
+                line-height: 50px;
+            }
+            nav ul li a{
+                font-size: 22px;
+            }
+            a:hover,a.active{
+                background: none !important;
+                color: #0082e6;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+        }
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 8px;
+}
+
+
+#fixed-social {
+   position: fixed;
+   top: 165px;
+}
+
+#fixed-social a {
+   color: #fff;
+   display: block;
+   height: 40px;
+   position: relative;
+   text-align: center;
+    line-height: 40px;
+   width: 40px;
+   margin-bottom: 1px;
+   z-index: 2;
+}
+#fixed-social a:hover>span{
+    visibility: visible;
+  left: 41px;
+  opacity: 1;
+} 
+#fixed-social a span {
+    line-height: 40px;
+    left: 60px;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    z-index: 1;
+    opacity: 0;
+}
+ .fixed-facebook{
+    background-color: #3b5998;
+ }
+ .fixed-facebook span{
+    background-color: #3b5998;
+ }
+ .fixed-tiktok{
+    background-color: #050002;
+
+ }
+ .fixed-tiktok span{
+    background-color: #050002;
+ }
+ .fixed-instagram{
+
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+
+
+ }
+ .fixed-instagram span{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+    
+ }
+ .fixed-youtube{
+    background-color: #cd201f;
+
+ }
+ .fixed-youtube span{
+    background-color: #cd201f;
+ }
+
+ .animated-word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+.letter {
+    transition: 0.4s;
+    transform: translateX(0);
+    cursor:grab;
+    color: #fff;
+    padding-top: 10px;
+}
+.letter:hover {
+    transform: translateY(-1rem);
+    background: -webkit-linear-gradient(120deg, hsl(19, 90%, 52%), hsl(56, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.i{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff416c;
+    }
+    25% {
+        color: #ff4b2b;
+    }
+    50% {
+        color: #0099cc;
+    }
+    75% {
+        color: #ffcc00;
+    }
+    100% {
+        color: #44bd32;
+    }
+}
