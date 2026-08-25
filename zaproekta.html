@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="zaproekta.css">
+	<title>За проекта</title>
+	  <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+
+<script>
+        function searchFunction() {
+            // Get the input value and convert it to lowercase
+            var input, filter, ul, li, a, i;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            
+            // Get the search results container
+            var searchResults = document.getElementById('search-results');
+
+            // Show or hide the search results container based on input value
+            if (filter.trim() !== "") {
+                searchResults.style.display = 'block';
+            } else {
+                searchResults.style.display = 'none';
+                return;
+            }
+
+            // You can replace the following with actual search logic or API call
+            // In this example, it just shows some dummy search results
+            var results = ['Result 1', 'Result 2', 'Result 3'];
+
+            // Display the search results
+            searchResults.innerHTML = '';
+            for (i = 0; i < results.length; i++) {
+                var result = results[i];
+                var resultElement = document.createElement('a');
+                resultElement.href = '#'; // You can set the actual link here
+                resultElement.textContent = result;
+                searchResults.appendChild(resultElement);
+            }
+        }
+
+        // Close the search results when clicking outside the search bar
+        document.addEventListener('click', function(event) {
+            var searchResults = document.getElementById('search-results');
+            if (event.target !== document.getElementById('searchInput')) {
+                searchResults.style.display = 'none';
+            }
+        });
+    </script>
+
+
+</head>
+<body style="background-color: ;" >
+<header style="background-image: url(124.png); width: 100%; height: 218px;">
+ <h1 style="animation: colorChange 10s linear infinite; padding-top: 55px; font-size: 75px;text-shadow: 2px 1px black">За проекта</h1>  
+</header>
+
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="polina_dimitrova.html">Начало</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="zaproekta.html">За проекта</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="katalog.html">Каталог</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="graphics.html">Графика</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="infogr.html">Инфографика</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login.html">Log in</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Контакти</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">За мен</a>
+    </li>
+    </ul>
+</nav>
+
+
+<section style="width: 100%; background-color: #1F2739">
+<div style="position: relative;font-family: Verdana, sans-serif;">  <div class="tab">
+  <button style="height: 20%; padding-left: 40%;" class="tablinks" onclick="openCity(event, 'Uvod')" id="defaultOpen">Увод</button>
+  <button style="height: 20%; padding-left: 40%;" class="tablinks" onclick="openCity(event, 'Celi')">Цели</button>
+  <button style="height: 20%; padding-left: 40%;" class="tablinks" onclick="openCity(event, 'Zadachi')">Задачи</button>
+  <button style="height: 20%; padding-left: 40%;" class="tablinks" onclick="openCity(event, 'Logo')">Лого</button>
+  <button style="height: 20%; padding-left: 40%;" class="tablinks" onclick="openCity(event, 'Animation')">Анимация</button>
+</div>
+
+<div id="Uvod" class="tabcontent">
+  <h3 style="text-align: center; font-size: 35px;"><u>Увод</u></h3>
+  <p style="text-align: justify; font-family:verdana; font-size: 25px; padding-right: 50px; " >Уебсайтът, посветен на "Традициите и обичаите на България", има за цел да представи богатото културно наследство на страната. Той предоставя информация за вековните обичаи и традиции, които обогатяват и поддържат националния идентитет на българите. </p>
+</div>
+
+<div id="Celi" class="tabcontent">
+  <h3 style="text-align: center; font-size: 35px;"><u>Цели</u></h3>
+  <p style="text-align: justify; font-family:verdana; font-size: 25px; padding-right: 50px;">&#8226;Създаване на информативен и интерактивен уеб сайт<br>
+&#8226;Интерактивна платформа за потребителите<br>
+Общата цел е създаване на динамичен и устойчив уеб сайт, който не само предоставя статична информация, но и реагира на променящите се нужди и интереси на потребителите, укрепвайки темата за традициите и обичаите на България в дългосрочен план.
+</p> 
+</div>
+
+<div id="Zadachi" class="tabcontent">
+  <h3 style="text-align: center; font-size: 35px;"><u>Задачи</u></h3>
+  <p style="text-align: justify; font-family:verdana; font-size: 25px; padding-right: 50px;">&#8226; Изследване на традициите:извършване на обстойно изследване на традициите и обичаите от различни региони на България.<br>
+&#8226; Събиране на съдържание:събиране на текстове, снимки и видео материали, които ще бъдат включени в уеб сайта.<br>
+&#8226; Организация на информацията:структуриране на съдържанието по категории и региони, за да бъде лесно достъпно за потребителите.<br>
+&#8226; Интерактивни елементи:внедряване на интерактивни елементи като тестове, въпроси и отговори, които ангажират потребителите и подпомагат в усвояването на информацията.<br>
+</p>
+</div>
+
+<div id="Logo" class="tabcontent">
+  <h3 style="text-align: center; font-size: 35px;"><u>Лого</u></h3>
+<img style="width: 500px; height: 500px; margin-left: 20%;" src="img/logo.png">
+</div>
+
+<div id="Animation" class="tabcontent">
+  <h3 style="text-align: center; font-size: 35px;"><u>Анимация</u></h3>
+ <img style="width: 700px; height: 700px; margin-left: 8%; margin-top: -70px;" src="img/an.gif">
+</div>
+
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+<a href="index.html"><button class="button-85" role="button">Тест</button></a>
+
+
+
+<div style="padding-top: 75px;  ">
+<div style="height:500px; overflow-x: hidden; text-align: center;">
+      <div class="csslider infinity" id="slider1">
+      <input type="radio" name="slides" checked="checked" id="slides_1"/>
+      <input type="radio" name="slides" id="slides_2"/>
+      <input type="radio" name="slides" id="slides_3"/>
+      <input type="radio" name="slides" id="slides_4"/>
+      <input type="radio" name="slides" id="slides_5"/>
+
+        <ul>
+          <li>
+         <iframe width="100%" height="400px" src="https://www.youtube.com/embed/e1j1NPLanoI?si=JBzlW2BbsLcy2PGu" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+          </li>
+          <li>
+            <p>
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/KsJz-BsSMQY?si=JEbfPHeCzw7IdjDh" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+          </li>
+          <li>
+            <p>
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/FwsrOm_vBQc?si=RtYKy1eE1Biq7r1R" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+          </li>
+          <li>
+            <p>
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/-JbPuU63zBY?si=NudBZwbeQE_uPHKd" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+          </li>
+          <li>
+                  <p>
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/EHDKuxTO68c?si=DcygCu-tUulOuh4s
+" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+          </li>
+          
+          <li>
+            <p>
+            <video controls preload>
+            <source src="" />
+            </video> 
+            </p>
+          </li>
+          <li>
+            <p>
+            <video controls preload>
+            <source src="" />
+            </video> 
+            </p>
+          </li>
+        </ul>
+          <div class="arrows">
+            <label for="slides_1"></label>
+            <label for="slides_2"></label>
+            <label for="slides_3"></label>
+            <label for="slides_4"></label>
+            <label for="slides_5"></label>
+
+
+            <label class="goto-first" for="slides_1"></label>
+            <label class="goto-last" for="slides_5"></label>
+          </div>
+          <div class="navigation"> 
+            <div>
+              <label for="slides_1"></label>
+              <label for="slides_2"></label>
+              <label for="slides_3"></label>
+              <label for="slides_4"></label>
+              <label for="slides_5"></label>
+
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+</section>
+
+
+<footer>
+	<h1>Полина Димитрова</h1>
+</footer>
+
+</body>
+</html>
+

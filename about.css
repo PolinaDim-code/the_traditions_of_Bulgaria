@@ -1,0 +1,254 @@
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #1F2739;
+    color: #4DC3FA;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+@keyframes colorChange {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #44bd32; /* Green */
+    
+    }
+    100% {
+        color: #ff416c; /* Red */
+    }
+}
+
+nav{
+  margin-top: -32px;
+}
+section{
+  width: 100%;
+  height: 800px;
+}
+
+#fixed-social {
+   position: fixed;
+   top: 165px;
+   right: 0px;
+}
+
+#fixed-social a {
+   color: #fff;
+   display: block;
+   height: 50px;
+   position: relative;
+   text-align: center;
+    line-height: 40px;
+   width: 50px;
+   margin-bottom: 1px;
+   z-index: 2;
+}
+#fixed-social a:hover>span{
+    visibility: visible;
+  right: 50px;
+  opacity: 1;
+} 
+#fixed-social a span {
+    line-height: 50px;
+    right: 60px;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    z-index: 1;
+    opacity: 0;
+}
+ .fixed-facebook{
+    background-color: #3b5998;
+ }
+ .fixed-facebook span{
+    background-color: #3b5998;
+ }
+ .fixed-tiktok{
+    background-color: #050002;
+
+ }
+ .fixed-tiktok span{
+    background-color: #050002;
+ }
+ .fixed-instagram{
+
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+
+
+ }
+ .fixed-instagram span{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+    
+ }
+ .fixed-youtube{
+    background-color: #cd201f;
+
+ }
+ .fixed-youtube span{
+    background-color: #cd201f;
+ }
+
+
+
+
+
+.img-container{
+    width: 400px;
+    height: 600px; 
+    position: relative;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+.top{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+.top:hover {
+    opacity: 1;
+}
+
+.img-container1{
+    width: 400px;
+    height: 600px; 
+    position: relative;
+    margin-left: 750px;
+}
+.img-container1 img{
+    width: 100%;
+    height: 100%;
+}
+.top1{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+.top1:hover {
+    opacity: 1;
+}
+
+a::selection {
+  background: indianred;
+  color: white;
+}
+
+a::-moz-selection {
+  background: indianred;
+  color: white;
+}
+h1::selection {
+  background: indianred;
+  color: white;
+}
+
+h1::-moz-selection {
+  background: indianred;
+  color: white;
+}
+img::selection {
+  background: indianred;
+  color: white;
+}
+
+img::-moz-selection {
+  background: indianred;
+  color: white;
+}
+p::selection {
+  background: indianred;
+  color: white;
+}
+
+p::-moz-selection {
+  background: indianred;
+  color: white;
+}
+
+.GFG {
+            width: 400px;
+            height: 600px;
+            border-radius: 10%;
+            
+        }
+        .GFG:hover {
+            color: #111;
+            background: lightblue;
+            box-shadow: 0 0 100px lightblue;
+        }
+
+
+    .project-container {
+        margin: 50px auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Styling for each individual project */
+    .project {
+        margin: 20px;
+        background-color: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Hover effect for projects */
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        color: #111;
+            box-shadow: 0 0 100px purple;
+    }
+
+    /* Styling for project titles */
+    .project h3 {
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(to right, #8e44ad, #9b59b6);
+        color: #fff;
+        font-size: 20px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    /* Styling for project links */
+    .project a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #2980b9;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Hover effect for links */
+    .project a:hover {
+        background-color: #f0f0f0;
+        color: #2c3e50;
+    }
+
+    /* Styling for project descriptions */
+    .project p {
+        margin: 10px 20px;
+        color: #555;
+    }
